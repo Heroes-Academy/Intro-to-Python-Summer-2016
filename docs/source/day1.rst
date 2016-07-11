@@ -1,4 +1,4 @@
-Week 1: Hello World
+Day 1: Hello World
 ===================
 
 Reminder: if you have any difficulty, email me at bmcmahan@njgifted.org with questions!  Failing is good.  Failing silently is bad. 
@@ -15,13 +15,14 @@ Review
 
 Values are data - things like 25, "Hello", and 3.14159. Variables are just containers that hold that data. Each variable you use in code gets its own name - it's like an envelope that you label so you remember what's inside of it. You make variables in Python using the "assignment" operator, which is the equals sign (=). Here are some examples:
 
-x = 5
+::
+    x = 5
 
-my_text = "Hello, World!"
+    my_text = "Hello, World!"
 
-num3 = 3333.333
+    num3 = 3333.333
 
-text_number = "500"
+    text_number = "500"
 
 (Remember - you can tell if a variable is a String if it's surrounded by '' or "")
 
@@ -62,10 +63,12 @@ Get Python installed and working on your home computer.  Instructions on how to 
 
 Open up the interactive shell (iPython console or iPython QT console), play around like we did in class!
 
-Bonus Homework Item
-^^^^^^^^^^^^^^^^^^^
+Recommended Homework Item
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Use a math equation from your school work, or any math equation you can find on the internet, and turn it into python code. 
+
+Make at least one mistake that creates an error.  Write it down how you created it.  Bring it to class tomorrow. 
 
 
 Lecture Slides
@@ -73,4 +76,4 @@ Lecture Slides
 
 .. raw:: html
 
-    <iframe src="https://docs.google.com/presentation/d/1VooZX3UuZgSBDn-Seks38QQiTxtDkah3YxJLf9wG-as/embed?start=false&loop=false&delayms=30000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe src="https://docs.google.com/presentation/d/1oT1cGACGY7w9fE8IkMVfULxoxOtD78R4LkFnV6ZCj44/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

@@ -9,16 +9,14 @@ HEROES Academy is an intellectually stimulating environment where students’ pe
 When does this course meet?
 ---------------------------
 
-The Intro to Python course will meet from 11:30 AM to 1:30 PM on the following Sundays: 
+The Intro to Python course will meet from 2:00 pm to 4:00 pm on the following days: 
 
-- April 10, 17, 24
-- May 1, 8, 15, 22
-- June 5, 12, 19
+- July 11 through July 15
+- July 18 through July 22
 
 How do I register for this course?
 ----------------------------------
 
-This course has already begun, but new courses are started at regular intervals!
 The list of courses are `listed on the HEROES website <http://www.njgifted.org/course-list-view>`_.
 If you have any questions about the process, you
 can check out the `HEROES Frequently Asked Questions <http://www.njgifted.org/page?name=faqs>`_.
@@ -41,6 +39,6 @@ I expect that...
 How do I contact you?
 ---------------------
 
-You can reach me anytime at tmeo@njgifted.org
+You can reach me anytime at bmcmahan@njgifted.org
 
 

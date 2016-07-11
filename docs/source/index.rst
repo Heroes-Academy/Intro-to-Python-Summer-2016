@@ -35,10 +35,11 @@ __ HeroesSite_
    :maxdepth: 2
    :caption: Course Contents
 
-   week1
+   day1
+   day2
 
 ..
-   week2
+   
    week3
    week4
    week5
