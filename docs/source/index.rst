@@ -2,7 +2,7 @@
 .. author: brian mcmahan, tim meo
 .. date: 4/9/2016
 
-Heroes Academy: Introduction to Python, Spring 2016
+Heroes Academy: Introduction to Python, Summer 2016
 ===============================================
 
 Course Description
@@ -36,6 +36,8 @@ __ HeroesSite_
    :caption: Course Contents
 
    week1
+
+..
    week2
    week3
    week4
