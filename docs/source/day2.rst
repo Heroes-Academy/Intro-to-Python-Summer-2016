@@ -5,7 +5,46 @@ Day 2: Strings and Input
 Summary
 -------
 
-To come after the class!
+We made it through a lot of material today. We started with a refresher on string operations
+by doing the pig latin exercise. However, this exercise turned into a bunch of extra steps because you all were doing so awesome!
+
+The extra steps were:
+1. use ``input`` to get a word from the console
+2. use a for loop and ``words.split(" ")`` to loop over words in a sentence and do pig latin to each.
+:: 
+    word = input("give me a word for piglatin: ")
+    ### do your pig latin stuff here
+    sentence = input("give me a sentence for piglatin: ")
+    print("Split sentence: {}".format(sentence.split(" ")))
+    for word in sentence.split(" "):
+        ## do your pig latin stuff here
+        print(word)
+
+After we finished up that exercise, we worked through the shortcut math operations. 
+Then, we talked about formatting strings.  You saw the curly bracket (``{}``) easy way. 
+You should check the review out below. 
+
+We rushed through some of the input and type conversion stuff. So, you should definitely try inputting numbers and then converting them for a math equation. 
+
+
+In-Class and Homework Exercises
+-------------------------------
+
+
+I have updated the homeworks below to include some of our discussion at the end of class. 
+
+All of the code is on the `Github Repository  <https://github.com/Heroes-Academy/Intro-to-Python-Summer-2016>`_. 
+
+1. Go through ``formulas.py`` and do those problems.
+2. Read through ``harder_formulas.py``, ``string_practice.py``, and ``build_in_practice.py``
+    - try to do these problems. If you can't, let me know and I'll go over them
+3. Break the code in some way. 
+    - You should be writing down the error, what it says, and why it happened.
+    - You should also send me code by tomorrow with how you made the error 
+4. Do something fun with turtles. `The one I created in class is here <https://trinket.io/python/c9c47d373c>`_.
+
+See below for more details.
+
 
 
 Review
@@ -231,19 +270,6 @@ Maybe you want to print out how many letters are in your name:
 
 Quick note: whenever you get user input, the computer assumes it’s a String. So in the example above, ``user_name`` is a String. Even if the user types in a number, you get it as a String first. You can convert it to a number using the int() or float() functions we learned.
 
-
-In-Class and Homework Exercises
--------------------------------
-
-1. Formula programs
-    - Input a number, calculate various things!
-    - These are simple; just make sure it matches the equations =)
-2. Word problem formula programs
-    - Descriptions of problems, but you have to make your own set of instructions rather than copying an equation!
-3. Break the code with an error that you think is new or interesting
-    - It has to involve the things we did today
-    
-These are all on `the github repository <https://github.com/Heroes-Academy/Intro-to-Python-Summer-2016>`_. 
 
 
 Lecture Slides

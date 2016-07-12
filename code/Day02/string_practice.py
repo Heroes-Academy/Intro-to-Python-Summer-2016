@@ -36,7 +36,7 @@ print(str1[0])
 
 
 # Question 5
-# how would you print "PERPETUAL"?
+# how would you print "erpetualpay"?
 
 
 # Question 6
