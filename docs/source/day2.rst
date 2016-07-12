@@ -41,11 +41,14 @@ All of the code is on the `Github Repository  <https://github.com/Heroes-Academy
 3. Break the code in some way. 
     - You should be writing down the error, what it says, and why it happened.
     - You should also send me code by tomorrow with how you made the error 
-4. Do something fun with turtles. `The one I created in class is here <https://trinket.io/python/c9c47d373c>`_.  Or if you scroll to the bottom of the page, I've embedded it there.  
+4. Do something fun with turtles. 
+    - `The one I created in class is here <https://trinket.io/python/c9c47d373c>`_.  
+    - Or if you scroll to the Trinkets_ section at bottom of the page, I've embedded it there.  
 
 See below for more details.
 
 Also, here are some extra resources for the turtles (their commands and such):
+
 - `Notes on using turtle <http://www.eg.bucknell.edu/~hyde/Python3/TurtleDirections.html>`_
 - `Turtle Examples <https://michael0x2a.com/blog/turtle-examples>`_
 - `Week 3 of our Data Structures Course <http://ds.cs.njgifted.org/en/latest/week3.html>`_
