@@ -41,7 +41,8 @@ All of the code is on the `Github Repository  <https://github.com/Heroes-Academy
 3. Break the code in some way. 
     - You should be writing down the error, what it says, and why it happened.
     - You should also send me code by tomorrow with how you made the error 
-4. Do something fun with turtles. `The one I created in class is here <https://trinket.io/python/c9c47d373c>`_.
+4. Do something fun with turtles. `The one I created in class is here <https://trinket.io/python/c9c47d373c>`_.  
+Or if you scroll to the bottom of the page, I've embedded it there. 
 
 See below for more details.
 
@@ -278,3 +279,11 @@ Lecture Slides
 .. raw:: html
 
     <iframe src="https://docs.google.com/presentation/d/1YkwERJfgs5kBbtj8cXGVik010NLEpBE7Cqio8LBIFnI/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+Trinkets
+--------
+
+.. raw:: html
+
+    <iframe src="https://trinket.io/embed/python/c9c47d373c" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
