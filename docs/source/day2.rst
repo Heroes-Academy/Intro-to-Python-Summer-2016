@@ -18,6 +18,7 @@ After this class, you should know or practice all of these topics:
 -	Repeating a String
 -	Indexing Strings
 -	Slicing Strings
+-   Formatting Strings
 -	Math Shortcuts
 -	Converting between types
 -	User Input
@@ -103,6 +104,50 @@ Some more examples:
 If you leave out the second number, the slice will go until the end of the String.
 
 - For example: str[2:] is “ntastic!”
+
+Formatting Strings
+******************
+
+Formatting strings is necessary if you want to be able to print variables to the shell.
+
+There are a couple different ways of formatting strings.  I will cover all three here.
+
+**1. With string concatenation**
+::
+    animal = "bunny"
+    adjective = "evil"
+    noun = "the ruler of the world"
+    
+    our_sentence = "The "+adjective+" "+animal+" wants to be "+noun"."
+    
+    print(our_sentence)
+    
+**2. With string formatting**
+::
+    animal = "bunny"
+    adjective = "evil"
+    noun = "the ruler of the world"
+    
+    our_sentence = "The {} {} wants to be {}.".format(adjective, animal, noun)
+    
+    print(our_sentence)
+    
+The second way is much preferred because you can have fine grained control over formatting options:
+::
+    a_number = 3432.34234324233462
+    print("Not formatted well: {}".format(a_number))
+    print("Formatted: {:0.3f}".format(a_nubmer))
+    
+    a_string = "euclid the bunny"
+    print("without formatting options: {}".format(a_string))
+    print("with formatting options to right align: {:>50}  [end]".format(a_string))
+    print("with formatting options to center align: {:^50} [end]".format(a_string))
+
+The stuff inside the curly brackets specifies the options.  The options start with a colon.  
+Then, if it's a number, you can specify the number of decimal points to have.  You need the 'f' for the float.
+
+For strings, '>' aligns to the right, '<' aligns to the left, and '^' aligns to the center. 
+The number directly after that is how wide it should be. It will add spaces to adjust. 
 
 Math shortcuts
 **************
@@ -190,9 +235,20 @@ Quick note: whenever you get user input, the computer assumes it’s a String. S
 In-Class and Homework Exercises
 -------------------------------
 
-Coming Soon
+1. Formula programs
+    - Input a number, calculate various things!
+    - These are simple; just make sure it matches the equations =)
+2. Word problem formula programs
+    - Descriptions of problems, but you have to make your own set of instructions rather than copying an equation!
+3. Break the code with an error that you think is new or interesting
+    - It has to involve the things we did today
+    
+These are all on `the github repository <https://github.com/Heroes-Academy/Intro-to-Python-Summer-2016>`_. 
+
 
 Lecture Slides
 --------------
 
-Coming Soon
+.. raw:: html
+
+    <iframe src="https://docs.google.com/presentation/d/1YkwERJfgs5kBbtj8cXGVik010NLEpBE7Cqio8LBIFnI/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

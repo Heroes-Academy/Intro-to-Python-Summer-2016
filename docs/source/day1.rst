@@ -8,7 +8,14 @@ Summary
 
 Our first lesson!
 
-A summary will be written up after the class!
+We made excellent progress through all of the material.  
+In fact, we even got ahead of where I thought we'd be.  
+Not only did we cover the basics of Python's variables, but we got started on strings!
+The review for strings will be left on the day 2 page. 
+
+When you practice, you should be trying to identify how code can break!  
+Knowing how things break is the best way to make them not break. 
+
 
 Review
 ------
