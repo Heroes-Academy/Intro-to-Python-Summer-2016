@@ -41,8 +41,7 @@ All of the code is on the `Github Repository  <https://github.com/Heroes-Academy
 3. Break the code in some way. 
     - You should be writing down the error, what it says, and why it happened.
     - You should also send me code by tomorrow with how you made the error 
-4. Do something fun with turtles. `The one I created in class is here <https://trinket.io/python/c9c47d373c>`_.  
-Or if you scroll to the bottom of the page, I've embedded it there.  
+4. Do something fun with turtles. `The one I created in class is here <https://trinket.io/python/c9c47d373c>`_.  Or if you scroll to the bottom of the page, I've embedded it there.  
 
 See below for more details.
 
