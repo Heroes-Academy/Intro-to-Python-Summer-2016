@@ -1,6 +1,6 @@
-.. Resource master file for the Heroes Academy Spring 2016 Introduction to AI course
+.. Resource master file for the Heroes Academy Summer Intro Python course
 .. author: brian mcmahan, tim meo
-.. date: 4/9/2016
+.. date: 7/2016
 
 Heroes Academy: Introduction to Python, Summer 2016
 ===============================================
@@ -37,10 +37,9 @@ __ HeroesSite_
 
    day1
    day2
-
+   day3
 ..
    
-   week3
    week4
    week5
    week6
