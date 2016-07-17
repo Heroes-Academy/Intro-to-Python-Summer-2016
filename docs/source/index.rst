@@ -38,11 +38,10 @@ __ HeroesSite_
    day1
    day2
    day3
+   day4
+   day5
 ..
    
-   week4
-   week5
-   week6
    week7
    week8
    week9

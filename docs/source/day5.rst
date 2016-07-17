@@ -1,17 +1,40 @@
 Week 5: Collections and Loops
 =============================
 
-Summary
--------
+Take home work
+-------------
 
-We covered a lot of material this week. This recap will be important for getting the homework done!
+1. Play with the turtles more. On Monday, we will have a vote on who has the best design or coolest turtle.
+	- you should also be practicing your for loops!
+	- take the numbers out of the loops by replacing them with variables
+	- having is so that the variables are set at the top of the file
+	- then you can change the variables in one place and change the behavior!
+2. Put multiple turtles into a list and use a for loop over that list to do the same thing to multiple turtles at once!
+3. Play the guessing game using a while loop.
+	- The computer guesses a number
+	- The user has to guess until they are right
+	- The computer tells the user higher or lower
+	- The computer counts how many guesses it took
+4. Play with the following code, using your own options. You could even add more lists!
+::
+	import random
+	adjectives = ["super", "silly", "evil", "furry"]
+	nouns = ["rabbit", "tortiose", "gorilla"]
+	keep_going = True
+	while keep_going:
+	   pick1 = random.choice(adjectives)
+	   pick2 = random.choice(nouns)
+	   print("you are a {} {}".format(pick1, pick2))
+	   answer = input("Keep going? (yes/no) ")
+	   keep_going = answer == "yes"
+	   # alternate version:
+	   # keep_going = (input("Keep going? (yes/no) ") == "yes")
+	print("goodbye!")
 
-Topics:
 
-- Review of ``for`` loops
-- Review of If-Elif-Else structure
 
-See the page for Week 04 for a review of those two topics.
+Review
+------
 
 Collections
 ***********
@@ -91,41 +114,27 @@ The above code will output:
 	Remember to buy: celery
 	That's it!
 
-And that brings us to the end of the lesson!
+Random
+******
 
+The random library lets you do randomized events.  You must always start with importing it. 
 
-Homework
---------
-For homework this week, you'll write 3 different files in PyCharm. Email each to me when you've finished them! You can either email the file itself, or just copy and paste your code into the email. My address is tmeo@njgifted.org 
+For example:
+::
+	import random
+	# num is short for number
+	num = random.random()
+	
+You can do random integers and random choices too:
+::
+	import random
+	num = random.randint(0,10)
+	
+	pet_names = ["euclid", "fido", "bob"]
+	selected_name = random.choice(pet_names)
 
-Remember, ask questions if you have any difficulty! These three assignments are a good way to tell if you've really got the basics down, which is important this far into the class.
+With the ``random.randint(start,stop)``, the integer sampled is just like ``range``: it will only go UP to the stop number. It will never include it. 
 
-Practicing with Lists
-*********************
-Make a list that uses different types of variables for its items (use ints, booleans, and strings). It should be at least 5 items long.
-
-After you make the list, ask the user to enter a number. Print out the **type** of the item at that index in the list. (Do you remember how to do this? If you've forgotten, try using Google!) 
-
-A word of caution - like we saw in class, if the index number is too high, the program will run into an error! Use an ``if/else`` statement to check if the number they gave is too high. If it is, just print a message telling the user they should have picked a smaller number, and move on.
-
-Finally, use a ``for`` loop to print out each item in the list individually.
-
-Practicing with Dictionaries
-****************************
-Pick 5 random words, either from a physical dictionary or using Google. Make a Python dictionary whose keys are the words, and whose values are the definitions (you can keep the definitions short). 
-
-At the end of the program, ask the user to enter one of the words in your dictionary. Print out the definition of the word they chose, using you Python dictionary.
-
-Something to think about: What happens if the user types in a word that isn't in your dictionary yet? Try it out - we'll see how to deal with this in a future lesson...
-
-Practicing with While Loops
-***************************
-Have a variable x that starts at 0, and another to represent an upper limit. Repeatedly ask the user for a number, and increase x by that amount. 
-
-Keep asking for numbers until x has risen above the upper limit you chose. At the end, print out what the final value of x is - and tell the user whether it's even or odd (hint: you'll have to use one of the math operators...)
-
-Extra Resources
----------------
 
 
 Lecture Slides
@@ -133,4 +142,4 @@ Lecture Slides
 
 .. raw:: html
 
-    <iframe src="https://docs.google.com/presentation/d/1uv27qr6qiAJppnXoqVAgrKq54PAyaVTUzEFVU15j388/embed?start=false&loop=false&delayms=30000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe src="https://docs.google.com/presentation/d/1M1iEGW40-onThVBWCQ3dv7x4NrWbBaiunDtQCNUESkg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
