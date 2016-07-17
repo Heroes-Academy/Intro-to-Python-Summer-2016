@@ -1,4 +1,4 @@
-Week 3: Booleans, If-Elif-Else, For
+Day 3: Booleans, If-Elif-Else, For
 ===================================
 
 Summary

@@ -1,4 +1,4 @@
-Week 5: Collections and Loops
+Day 5: Collections and Loops
 =============================
 
 Take home work
