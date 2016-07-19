@@ -1,8 +1,44 @@
-Week 6: Basic Functions
-=======================
+Day 6: Basic Functions
+======================
 
-Summary
--------
+Take Home Work
+--------------
+
+You should practice while loops, for loops, and writing your own functions.
+
+1. Write a while loop menu.
+	- At the start of the while loop, show the user the menu
+	- then, after they select an option, do whatever that option does
+	- Finally, ask them if they want to do another thing
+	- The goal is to have a loop we will combine with Problem 2. 
+	- So, just for testing, make a joke menu like in previous assignments.
+2. Write turtle functions for the menu
+	- Write the following functions.
+	- In the while loop menu, have them be options
+	- If you want, you could have sub options.
+	- For example, if one of the menu options was to have the turtle draw a square, then the submenu option could be having the user input the size of the square.
+::
+	def spiral(someturtle, loop_count, angle):
+		''' the loop count is for the range and the angle is for the spiral turning '''
+	
+	def polygon(someturtle, number_of_sides, side_length):
+		''' remember that the turning angle for any polygon is 360 / number_of_sides '''
+	
+	def turtle_profile1(someturtle):
+		''' come up with some settings for a turtle. this can include speed, shape, and color 
+			assign those settings to the turtle here
+		'''
+
+	def turtle_profile2(someturtle):
+		''' come up with some more settings for a turtle. this can include speed, shape, and color 
+			assign those settings to the turtle here
+		'''
+3. Finish drawing the face with turtles
+
+
+Review
+------
+
 This week we talked about **functions** - what they are, what're used for, and how to write our own.
 
 Function Basics
@@ -100,32 +136,6 @@ So, for example:
 ...will crash, because of the last line. We'll talk more about scope later on.
 
 We finished up by experimenting with turtles and writing functions. Check the Extra Resources section after tomorrow to see some examples!
-
-
-Homework
---------
-I have 3 exercises I'd like you to complete in PyCharm this week. They might seem simple, but it's important to get the basics of writing and using your own functions in code early on, so it's worth the practice.
-
-1. Simply write a program that defines the ``add_two_numbers`` function from above. Call the function with 5 different pairs of numbers. Then try the following two experiments: What happens if you call it with a pair of Strings? What happens if you call it with one Int and one Boolean?
-
-2. Write a program that defines the following functions.
-
-- ``difference_between_two_numbers(num1, num2)``, which subtracts one number from the other and prints the result
-- ``multiply_two_numbers(num1, num2)``, which multiplies the two numbers and prints the result
-- ``compare_two_numbers(num1, num2)``, which prints which of the two numbers is bigger (hint: you'll need an if statement for this one!)
-- Then, after you've defined these functions, call each one once to demonstrate that it works.
-	
-3. Write any function using the ``turtle`` module. It can be as simple as you like (for example, ``draw_straight_line``), as long as it 1) takes a **turtle** as an **argument**, and 2) makes that turtle do something. Be creative and challenge yourself!
-
-Remember to email me with questions and answers as tmeo*njgifted.org. I'm always happy to help!
-
-Good luck!
-
-
-Extra Resources
----------------
-
-When I finish putting it together, I'll post some of the ``turtle`` code that we wrote using functions
 
 
 Lecture Slides
