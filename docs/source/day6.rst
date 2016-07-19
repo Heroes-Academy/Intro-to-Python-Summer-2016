@@ -143,4 +143,4 @@ Lecture Slides
 
 .. raw:: html
 
-    <iframe src="https://docs.google.com/presentation/d/1YB9yRWOYtxk0AsyE_Niq1L04Qxaa6XjsHuhpGgLI-hk/embed?start=false&loop=false&delayms=30000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe src="https://docs.google.com/presentation/d/1k17HbPlwlBkq0TV0geUVkzmlRiYfB5zmHYrvhcpce-8/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
