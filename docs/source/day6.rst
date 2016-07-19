@@ -17,6 +17,7 @@ You should practice while loops, for loops, and writing your own functions.
 	- In the while loop menu, have them be options
 	- If you want, you could have sub options.
 	- For example, if one of the menu options was to have the turtle draw a square, then the submenu option could be having the user input the size of the square.
+The function definition headers:
 ::
 	def spiral(someturtle, loop_count, angle):
 		''' the loop count is for the range and the angle is for the spiral turning '''
