@@ -1,6 +1,33 @@
 Day 07: More Functions and Intro to Minecraft
 =============================================
 
+Take Home Work
+--------------
+
+Today, we covered functions that return arguments and classes. We briefly looked at vectors in Minecraft as well. 
+
+So, your take home work is the following:
+
+1. Think about your project.  Come to class with the following:
+	- Your goal
+	- A brief initial plan
+	- Any difficulties you think will happen
+	- Your predictions for how far you think you will get
+2. Continue to work on the class you started
+	- Get at least 5 functions working for your class
+	- At least one should take an argument
+	- At least one should return a value
+	- **REMEMBER**: while inside a class function, it can only see *self* and the arguments passed to it!
+3. Rewrite one of your previous designs with functions. 
+	- This could mean putting the ENTIRE thing into a function
+	- It could mean taking a part of your design and turning it into a function then using that functin
+4. **Optional**: Incorporate more random choice into your turtle designs
+::
+	import random
+	anumber = random.randint(0,10)
+	somechoice = random.choice(['red', 'white', 'blue'])
+
+
 Review
 ------
 
