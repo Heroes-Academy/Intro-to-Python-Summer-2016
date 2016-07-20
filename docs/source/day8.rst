@@ -1,15 +1,31 @@
-Week 8: Advanced Classes
+Day 8: Advanced Classes
 ========================
 
 
-Summary
+Take home work
+--------------
+
+You should work on your project.
+
+Specialized tutorials
+---------------------
+
+1. :doc:`tutorials/turtle_artist.rst`
+2. :doc:`tutorials/chatbot.rst`
+3. :doc:`tutorials/minecraft_architect.rst`
+4. :doc:`tutorials/data_analysis`
+
+Review
 -------
 
-This lesson was split up into two segments:
+Two topics:
 
-- First, we learned about the ``__init__`` function in classes
-- Second, we spent most of the lesson reviewing everything we've learned so far about Python.
+- The ``__init__`` function in classes
+- Default arguments in functions
 
+
+``def __init__(self)``
+**********************
 
 The ``__init__`` function is one of Python's special functions - this is indicated by the double underscore (__) on either side of the function name. ``init`` is a keyword (like ``print`` or ``if``) and Python already knows what it's used for.
 
@@ -43,17 +59,9 @@ Here's an example:
 
 In this code, when a ``Door`` object is created, it takes two arguments: the name, and the height. These arguments are then used for setting up the Door object (i.e., they set up the properties ``self.name`` and ``self.height``)
 
-After that, we did a big review - all the questions and answers are included in the lecture slides, so you can use them if you want to brush up on old material. 
-
-
-Homework
---------
-
-No homework this week - just review what we've learned to prepare for your final project!
-
 Lecture Slides
 --------------
 
 .. raw:: html
 
-    <iframe src="https://docs.google.com/presentation/d/1NruISrIgHdI_w5oG5kOUCvsQkXm7gsUvGJnQVb3AcVs/embed?start=false&loop=false&delayms=30000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe src="https://docs.google.com/presentation/d/1Lgyi2knArQJXo9-7dEjvl7Un_UMcDHLtRRnWHV8F1QM/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

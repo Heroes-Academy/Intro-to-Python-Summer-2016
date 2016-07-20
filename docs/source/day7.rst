@@ -1,4 +1,4 @@
-Day 07: More Functions and Intro to Minecraft
+Day 7: More Functions and Intro to Minecraft
 =============================================
 
 Take Home Work
