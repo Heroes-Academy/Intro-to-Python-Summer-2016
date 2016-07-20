@@ -4,12 +4,14 @@ Minecraft Architect Tutorial
 The goal of this tutorial is walk you through how to be a minecraft architect.
 
 The first steps are going to be:
+
 1. Get the correct setup going (see :doc:`../installminecraft.rst`)
 2. Start interacting with the world
 
 This tutorial will cover a few of the basic information and then some techniques for building things in minecraft.
 
 To start:
+
 1. Start the minecraft server
 2. Log into the minecraft client (make sure you set the version under the profile settings to 1.9.2!)
 3. connect to a world at the address ``localhost`` or ``127.0.0.1``

@@ -4,6 +4,7 @@ Data Analysis Tutorial
 The goal of this tutorial is to talk about the important parts of beginning data analysis.
 
 The typical analysis pipeline goes through the following stages:
+
 1. Think about the data you would like
 2. Either find a way to collect that data, or find data that already exists
     - sometimes you might have to compromise on data because it's easier to just use stuff that exists already
@@ -34,17 +35,23 @@ Cleaning the Data
 -----------------
 
 Take this raw data and turn it into a cleaner version. 
+
 To do this, you have to go through each line, replace the newline character with 
 the empty string (so it is removed), and split on the comma.  
-Since the first line is the headers, you know the name of each column.  
+
+Since the first line is the headers, you know the name of each column. 
+
 So, you can take this information and make a dictionary per line which uses the 
 column names in the header as the keys and the values of each row as the values.  
 I have made a function which does this for one line.  You have to figure out how to 
 get the headers into a cleaned list, and how to apply this to every line in the file. 
+
 This should involve:
+
 1. to make the headers, replacing and splitting the first line in the data (``data[0]``) 
 2. then, use a for loop over the rest of the data (``data[1:]``) an apply the function
     - You will need another list to save things to (``clean_data.append(...)`` where ``...`` is a place holder for code you should write)
+example:
 ::
     def clean_one_line(line, headers):
         line = line.replace("\n", "")

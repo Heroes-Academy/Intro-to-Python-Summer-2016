@@ -4,6 +4,7 @@ Turtle Artist
 The basics of a turtle artist are being able to make creations that are more complicated than a single function.
 
 The goals you should have are:
+
 1. Create a class which wraps around a turtle
     - This means that it has an internal variable that is a turtle (or multiple turtles)
     - All of the class functions will then use that single turtle to do things
