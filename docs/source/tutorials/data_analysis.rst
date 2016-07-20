@@ -1,6 +1,16 @@
 Data Analysis Tutorial
 ======================
 
+
+More datasets
+-------------
+
+1. `Simpler Datasets <https://vincentarelbundock.github.io/Rdatasets/datasets.html>`_
+2. `A huge list of datasets <https://github.com/caesar0301/awesome-public-datasets>`_
+
+Overview
+--------
+
 The goal of this tutorial is to talk about the important parts of beginning data analysis.
 
 The typical analysis pipeline goes through the following stages:
