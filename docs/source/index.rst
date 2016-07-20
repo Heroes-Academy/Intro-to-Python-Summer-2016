@@ -44,7 +44,6 @@ __ HeroesSite_
    day7
    day8
 ..
-   
    week8
    week9
    week10
