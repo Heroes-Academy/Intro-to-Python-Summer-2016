@@ -7,6 +7,7 @@ More datasets
 
 1. `Simpler Datasets <https://vincentarelbundock.github.io/Rdatasets/datasets.html>`_
 2. `A huge list of datasets <https://github.com/caesar0301/awesome-public-datasets>`_
+3. `538's datasets <https://github.com/fivethirtyeight/data>`_
 
 Overview
 --------
