@@ -10,9 +10,9 @@ You should work on your project.
 Specialized tutorials
 ---------------------
 
-1. :doc:`tutorials/turtle_artist.rst`
-2. :doc:`tutorials/chatbot.rst`
-3. :doc:`tutorials/minecraft_architect.rst`
+1. :doc:`tutorials/turtle_artist`
+2. :doc:`tutorials/chatbot`
+3. :doc:`tutorials/minecraft_architect`
 4. :doc:`tutorials/data_analysis`
 
 Review
