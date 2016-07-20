@@ -36,11 +36,63 @@ Getting the Data
 I have made the data easy to get:
 ::
     from urllib import request
+    import pandas as pd
+    filepath = 'https://gist.githubusercontent.com/braingineer/5d15057ac482ee0130b6d0e6f9cc9311/raw/d4eefaecc98b342ec578cf3512184556e8856750/titanic.csv'
+    response = request.urlopen(filepath)
+    df = pd.read_csv(response)
+    df = df.fillna(0)
+
+
+Using Pandas
+------------
+
+I will put more here soon, but here are some initial tutorials:
+
+1. `Simple Graphics <http://pbpython.com/simple-graphing-pandas.html>`_
+2. `Beautiful Plots <https://datasciencelab.wordpress.com/2013/12/21/beautiful-plots-with-pandas-and-matplotlib/>`_
+
+Some simple operations:
+::
+    # select an entire column
+    age_column = df['Age']
+    
+    # select a subset 
+    df2 = df[age_column > 0]
+    
+    # view the columns
+    print(df2.columns)
+
+    # visualize a scatter plot
+    plt.scatter(df2['Survived'], df2['Age']);
+    # or with columns out
+    surv_col = df2['Survived']
+    age_col = df2['Age']
+    
+I will put up more later tonight. 
+
+
+
+
+Old versions below
+==================
+
+I have changed the page to reflect the use of pandas. the old stuff is below. 
+
+
+
+Getting the Data
+----------------
+
+
+I have made the data easy to get:
+::
+    from urllib import request
     filepath = 'https://gist.githubusercontent.com/braingineer/5d15057ac482ee0130b6d0e6f9cc9311/raw/d4eefaecc98b342ec578cf3512184556e8856750/titanic.csv'
     response = request.urlopen(filepath)
     data = response.readlines()
     
 The data that is input here is a list of rows for the dataset.  Try and print out a couple.
+
 
 Cleaning the Data
 -----------------

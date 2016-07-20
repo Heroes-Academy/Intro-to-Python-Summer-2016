@@ -18,8 +18,7 @@ Specialized tutorials
 Review
 -------
 
-Two topics:
-
+Topics:
 - The ``__init__`` function in classes
 - Default arguments in functions
 
