@@ -42,6 +42,7 @@ __ HeroesSite_
    day5
    day6
    day7
+   day8
 ..
    
    week8
