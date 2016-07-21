@@ -19,12 +19,14 @@ The typical analysis pipeline goes through the following stages:
 1. Think about the data you would like
 2. Either find a way to collect that data, or find data that already exists
     - sometimes you might have to compromise on data because it's easier to just use stuff that exists already
+    - I have provided links to datasets above. 
+    - For this tutorial, there is a titanic dataset
 3. Write code that takes the data from a file or database and loads it into a data structure
-    - For python, this could mean loading it into a list or a dict
-    - We might get to a more advanced data structure solution---Pandas---but we will cover the basics first.
+    - We will be using Pandas, a data management library
+    - Pandas makes manipulating data really easy
 4. Write code that puts the data into different forms that match the task you want to do.
     - For instance, if you want to view interesting properties of your data as a scatter plot, you need to get two lists: one for the x positions and 1 for the y positions
-
+    - You should be thinking about what kinds of things the data can tell you
 
 I will be writing this tutorial while looking at the titanic dataset. 
 The titanic dataset is a list of passengers, information about them, and whether they survived or not.
@@ -43,34 +45,79 @@ I have made the data easy to get:
     df = df.fillna(0)
 
 
-Using Pandas
-------------
+Using Pandas and Matplotlib
+---------------------------
 
-I will put more here soon, but here are some initial tutorials:
-
+Some example tutorials
+**********************
 1. `Simple Graphics <http://pbpython.com/simple-graphing-pandas.html>`_
 2. `Beautiful Plots <https://datasciencelab.wordpress.com/2013/12/21/beautiful-plots-with-pandas-and-matplotlib/>`_
 
-Some simple operations:
+Some simple operations
+**********************
+
+Selecting a column
 ::
-    # select an entire column
     age_column = df['Age']
     
-    # select a subset 
+Selecting a subset 
+::
     df2 = df[age_column > 0]
     
-    # view the columns
+View the columns
+::
     print(df2.columns)
 
-    # visualize a scatter plot
+Visualize a scatter plot
+::
     plt.scatter(df2['Survived'], df2['Age']);
     # or with columns out
     surv_col = df2['Survived']
     age_col = df2['Age']
     
-I will put up more later tonight. 
+Seaborn
+*******
+
+If you don't already have it, to install seaborn, type in a single cell in your Jupyter Notebook:
+::
+    !pip install seaborn
+
+Then, you can do the following:
+::
+    import seaborn as sns
+    sns.factorplot(data=df, x='Class', y='Age', hue='Survived', col='Sex')
+
+You can see more examples of seaborn plots at the `seaborn website <https://stanford.edu/~mwaskom/software/seaborn/examples/index.html>`_
 
 
+Science
+-------
+
+To use data for science, you want to get summarize what happened.  
+In other words, you want to tell a story with the data.  
+To do this, you have to look at the different properties: counts, means, proportions, etc.
+
+A good way to formulate a scientific question is to think about different groups. 
+If the rate at which something happens is different between the two groups, then there is an effect of group. 
+
+Some terminology
+****************
+
+1. **Proportion**: A proportion is a number between 0 and 1 that signifies the part to whole relationship.
+   - If you eat half of a cake, the proportion you ate is 0.5
+2. **Percentage**: A percentage is a number between 0 and 100 that signifies the part to whole relationship
+   - If you eat half of a cake, the percentage is 50%
+
+Questions you can ask
+*********************
+
+1. How many people were on the Titanic?
+2. What percentage of the passengers did not survive?
+3. How many of the passengers were male? How many were female?
+4. How many male passengers survived?  How many female? Is there an interesting relationship?
+5. What is the proportion of 3rd class passengers who survived?   
+6. Is there an effect of class on the survivability of the gender?
+7. What is the mean age per class?  
 
 
 Old versions below
