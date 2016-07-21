@@ -46,7 +46,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'IntroPython_Spring_2016'
+project = u'Intro to Python; Summer 2016'
 copyright = u'2016, Brian McMahan'
 
 # The version info for the project you're documenting, acts as replacement for
