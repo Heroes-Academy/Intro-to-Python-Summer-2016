@@ -14,15 +14,17 @@ Tutorial Pages
 Example Slides
 **************
 
+.. raw:: html
+
+	<iframe src="https://docs.google.com/presentation/d/1BhVcGhiUifG9GgATvY1EfhM-_MC87_2DALh5AysicZw/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
 Review
 ------
 
+No review today. See tutorials for project-specific information.
 
 Slides
 ------
 
-
-
-.. raw:: html
-
-    <iframe src="https://docs.google.com/presentation/d/1TzKzBXEwWhcGWkrB5iCGHLtRLQwjU_tBs44HicrH2mk/embed?start=false&loop=false&delayms=30000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+No slides today
+   
