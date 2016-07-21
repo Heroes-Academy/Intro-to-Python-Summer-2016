@@ -5,7 +5,7 @@ The goal of this tutorial is walk you through how to be a minecraft architect.
 
 The first steps are going to be:
 
-1. Get the correct setup going (see :doc:`../installminecraft.rst`)
+1. Get the correct setup going (see :doc:`../installminecraft`)
 2. Start interacting with the world
 
 This tutorial will cover a few of the basic information and then some techniques for building things in minecraft.

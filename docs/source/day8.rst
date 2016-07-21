@@ -20,7 +20,10 @@ Review
 
 Topics:
 - The ``__init__`` function in classes
-- Default arguments in functions
+- Default (keyword) arguments in functions
+- Unpacking collections
+- Iterating over dictionary items
+- Zipping two lists
 
 
 ``def __init__(self)``
