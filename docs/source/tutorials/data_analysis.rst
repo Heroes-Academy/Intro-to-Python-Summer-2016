@@ -85,10 +85,19 @@ If you don't already have it, to install seaborn, type in a single cell in your 
 Then, you can do the following:
 ::
     import seaborn as sns
-    sns.factorplot(data=df, x='Class', y='Age', hue='Survived', col='Sex')
+    sns.barplot(data=df, x='Pclass', y='Survived')
 
 You can see more examples of seaborn plots at the `seaborn website <https://stanford.edu/~mwaskom/software/seaborn/examples/index.html>`_
 
+Some examples to get you started:
+::
+    sns.countplot(data=df, x='Sex', hue='Survived')
+    
+    ### do these in different cells otherwise they will try to plot on top of each other
+    sns.factorplot(data=df, x='Pclass', y='Age', col='Sex', kind='swarm', hue='Survived', x_order=[1, 2, 3])
+
+    ### super fancy
+    sns.factorplot(data=df_clean, kind='violin', split=True, inner='stick', scale='count', x='Class', y='Age', hue='Survived', col='Sex')
 
 Science
 -------
@@ -120,105 +129,126 @@ Questions you can ask
 7. What is the mean age per class?  
 
 
-Old versions below
-==================
 
-I have changed the page to reflect the use of pandas. the old stuff is below. 
-
-
-
-Getting the Data
+Additional setup
 ----------------
 
-
-I have made the data easy to get:
+A version I was working that renames and cleans a version of the dataset:
 ::
     from urllib import request
+    import pandas as pd
+    import seaborn as sns
+    %matplotlib inline
     filepath = 'https://gist.githubusercontent.com/braingineer/5d15057ac482ee0130b6d0e6f9cc9311/raw/d4eefaecc98b342ec578cf3512184556e8856750/titanic.csv'
     response = request.urlopen(filepath)
-    data = response.readlines()
+    df = pd.read_csv(response)
+    df = df.fillna(0)
+    cols = df.columns.values
+    idx = list(cols).index('Pclass')
+    cols[idx] = "Class"
+    df.columns = cols
+    df_clean = df[df['Age']>0]
+
+.. 
+    Old versions below
+    ==================
     
-The data that is input here is a list of rows for the dataset.  Try and print out a couple.
-
-
-Cleaning the Data
------------------
-
-Take this raw data and turn it into a cleaner version. 
-
-To do this, you have to go through each line, replace the newline character with 
-the empty string (so it is removed), and split on the comma.  
-
-Since the first line is the headers, you know the name of each column. 
-
-So, you can take this information and make a dictionary per line which uses the 
-column names in the header as the keys and the values of each row as the values.  
-I have made a function which does this for one line.  You have to figure out how to 
-get the headers into a cleaned list, and how to apply this to every line in the file. 
-
-This should involve:
-
-1. to make the headers, replacing and splitting the first line in the data (``data[0]``) 
-2. then, use a for loop over the rest of the data (``data[1:]``) an apply the function
-    - You will need another list to save things to (``clean_data.append(...)`` where ``...`` is a place holder for code you should write)
-example:
-::
-    def clean_one_line(line, headers):
-        line = line.replace("\n", "")
-        line = line.split(",")
-        ### this is a fancy line.  play around with zip on your own. 
-        ### zip lets you take two lists and make them into a list with them paired
-        ### just like a zipper =)
-        temp_dict = dict(zip(headers, line))
-        should_be_ints = ['PassengerId']
-        should_be_floats = []
-        out_dict = dict()
-        for key, value in temp_dict.items():
-            if key in should_be_ints:
-                out_dict[key] = int(value)
-            elif key in should_be_floats:
-                out_dict[key] = float(value)
-            else:
-                out_dict[key] = value
-        return out_dict
-
-Viewing the Data
-----------------
-
-Now that you have data in a list of dictionaries, you can view it!
-Matplotlib is the python plotting library. You can import it like:
-::
-    import matplotlib.pyplot as plt
-    
-If you are using Jupyter notebook (which I highly recommend), you should also type this in:
-::
-    %matplotlib inline
-
-If you are in the terminal, you should do the following. If you don't, every plot will take over the terminal and not let you type.
-::
-    plt.ion()
-
-If you are running a file, you should do the following after every plot. 
-::
-    plt.show()
-
-The reason it's shortcutted like this is because the alternative is too long. 
-It's called ``plt`` because it's just what everyone does (and it's good to use a common convention)
-
-There are a couple easy plots you can do:
-::
-    plt.plot
-    plt.hist
-    plt.scatter
-
-You can see some basics at `this pyplot tutorial <http://matplotlib.org/users/pyplot_tutorial.html>`_.
-But, you need to get your data into a certain form for this. 
-Let's take the ``plt.hist`` for example.  This requires you to have a single list of numbers.
-To do this, we now just iterate over our cleaned data:
-::
-    age_view = []
-    for datum in cleaned_data:
-        age_view.append(datum['Age'])
-    plt.hist(age_view)
+    I have changed the page to reflect the use of pandas. the old stuff is below. 
     
     
+    
+    Getting the Data
+    ----------------
+    
+    
+    I have made the data easy to get:
+    ::
+        from urllib import request
+        filepath = 'https://gist.githubusercontent.com/braingineer/5d15057ac482ee0130b6d0e6f9cc9311/raw/d4eefaecc98b342ec578cf3512184556e8856750/titanic.csv'
+        response = request.urlopen(filepath)
+        data = response.readlines()
+        
+    The data that is input here is a list of rows for the dataset.  Try and print out a couple.
+    
+    
+    Cleaning the Data
+    -----------------
+    
+    Take this raw data and turn it into a cleaner version. 
+    
+    To do this, you have to go through each line, replace the newline character with 
+    the empty string (so it is removed), and split on the comma.  
+    
+    Since the first line is the headers, you know the name of each column. 
+    
+    So, you can take this information and make a dictionary per line which uses the 
+    column names in the header as the keys and the values of each row as the values.  
+    I have made a function which does this for one line.  You have to figure out how to 
+    get the headers into a cleaned list, and how to apply this to every line in the file. 
+    
+    This should involve:
+    
+    1. to make the headers, replacing and splitting the first line in the data (``data[0]``) 
+    2. then, use a for loop over the rest of the data (``data[1:]``) an apply the function
+        - You will need another list to save things to (``clean_data.append(...)`` where ``...`` is a place holder for code you should write)
+    example:
+    ::
+        def clean_one_line(line, headers):
+            line = line.replace("\n", "")
+            line = line.split(",")
+            ### this is a fancy line.  play around with zip on your own. 
+            ### zip lets you take two lists and make them into a list with them paired
+            ### just like a zipper =)
+            temp_dict = dict(zip(headers, line))
+            should_be_ints = ['PassengerId']
+            should_be_floats = []
+            out_dict = dict()
+            for key, value in temp_dict.items():
+                if key in should_be_ints:
+                    out_dict[key] = int(value)
+                elif key in should_be_floats:
+                    out_dict[key] = float(value)
+                else:
+                    out_dict[key] = value
+            return out_dict
+    
+    Viewing the Data
+    ----------------
+    
+    Now that you have data in a list of dictionaries, you can view it!
+    Matplotlib is the python plotting library. You can import it like:
+    ::
+        import matplotlib.pyplot as plt
+        
+    If you are using Jupyter notebook (which I highly recommend), you should also type this in:
+    ::
+        %matplotlib inline
+    
+    If you are in the terminal, you should do the following. If you don't, every plot will take over the terminal and not let you type.
+    ::
+        plt.ion()
+    
+    If you are running a file, you should do the following after every plot. 
+    ::
+        plt.show()
+    
+    The reason it's shortcutted like this is because the alternative is too long. 
+    It's called ``plt`` because it's just what everyone does (and it's good to use a common convention)
+    
+    There are a couple easy plots you can do:
+    ::
+        plt.plot
+        plt.hist
+        plt.scatter
+    
+    You can see some basics at `this pyplot tutorial <http://matplotlib.org/users/pyplot_tutorial.html>`_.
+    But, you need to get your data into a certain form for this. 
+    Let's take the ``plt.hist`` for example.  This requires you to have a single list of numbers.
+    To do this, we now just iterate over our cleaned data:
+    ::
+        age_view = []
+        for datum in cleaned_data:
+            age_view.append(datum['Age'])
+        plt.hist(age_view)
+        
+        
