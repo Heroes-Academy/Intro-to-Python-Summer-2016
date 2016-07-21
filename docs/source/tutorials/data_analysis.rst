@@ -96,8 +96,6 @@ Some examples to get you started:
     ### do these in different cells otherwise they will try to plot on top of each other
     sns.factorplot(data=df, x='Pclass', y='Age', col='Sex', kind='swarm', hue='Survived', x_order=[1, 2, 3])
 
-    ### super fancy
-    sns.factorplot(data=df_clean, kind='violin', split=True, inner='stick', scale='count', x='Class', y='Age', hue='Survived', col='Sex')
 
 Science
 -------
@@ -148,6 +146,14 @@ A version I was working that renames and cleans a version of the dataset:
     cols[idx] = "Class"
     df.columns = cols
     df_clean = df[df['Age']>0]
+
+And a couple extra plots I was looking at:
+::
+    ### super fancy
+    sns.factorplot(data=df_clean, kind='violin', split=True, inner='stick', scale='count', x='Class', y='Age', hue='Survived', col='Sex')
+
+    ### really sad
+    sns.factorplot(data=df_clean, kind='bar', col='Class', x='SibSp', y='Age', hue='Survived', row='Sex')
 
 .. 
     Old versions below
